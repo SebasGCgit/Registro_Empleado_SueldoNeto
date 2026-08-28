@@ -1,0 +1,39 @@
+package ejercicio2;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) 
+    {
+        String nomb;
+        int ed, cod, dni;
+        double hor, pagxhor;
+        Scanner scan = new Scanner(System.in);
+        Random ran = new Random();
+        
+        //Captura de datos
+        System.out.println("Registro del empleado");
+        cod = ran.nextInt(9000)+1000;
+        System.out.println("Ingrese el Nombre: ");
+        nomb = scan.nextLine();
+        System.out.println("Ingrese la edad: ");
+        ed = scan.nextInt();
+        scan.nextLine();
+        System.out.println("Ingrese el DNI: ");
+        dni = scan.nextInt();
+        scan.nextLine();
+        System.out.println("Ingrese las horas trabajadas: ");
+        hor = scan.nextDouble();
+        scan.nextLine(); //Salto al sig. requisito
+        System.out.println("Ingrese el pago por hora: ");
+        pagxhor = scan.nextDouble();
+        scan.nextLine();
+        
+        Empleado emp = new Empleado (nomb,ed,dni,cod,hor,pagxhor);
+        
+        emp.mostar_sueldoNeto();
+    }
+    
+}
