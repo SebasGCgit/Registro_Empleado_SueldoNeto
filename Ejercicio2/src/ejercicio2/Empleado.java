@@ -3,12 +3,14 @@ package ejercicio2;
 public class Empleado 
 {
     String nombre;
+    String jornada;
     int edad, dni, cod_Emp;
     double horas;
     double pagoxhora;
-    public Empleado (String nombre, int edad, int dni, int cod_Emp, double horas, double pagoxhora)
+    public Empleado (String nombre, String jornada, int edad, int dni, int cod_Emp, double horas, double pagoxhora)
     {
         this.nombre=nombre;
+        this.jornada=jornada;
         this.edad =edad;        
         this.dni =dni;
         this.cod_Emp =cod_Emp;
@@ -22,6 +24,7 @@ public class Empleado
         System.out.println("Sueldo neto (horas x pago por hora)");
         System.out.println("Nombre                    :" +nombre+
                            "\nCodigo de identificación :" +cod_Emp+
+                           "\nJornada de trabajo:" +jornada+
                            "\nDNI                       :" +dni+
                            "\nEdad                      :" +edad+
                            "\nHoras trabajadas          :" +horas+
