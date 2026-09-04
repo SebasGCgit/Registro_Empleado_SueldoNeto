@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) 
     {
-        String nomb, jor;
+        String nomb, jor, gen;
         int ed, cod, dni;
         double hor, pagxhor;
         Scanner scan = new Scanner(System.in);
@@ -18,6 +18,8 @@ public class Main {
         cod = ran.nextInt(9000)+1000;
         System.out.println("Ingrese el Nombre: ");
         nomb = scan.nextLine();
+        System.out.println("Ingrese genero: ");
+        gen = scan.nextLine();
         System.out.println("Ingrese su tipo de jornada: ");
         jor = scan.nextLine();
         System.out.println("Ingrese la edad: ");
@@ -33,7 +35,7 @@ public class Main {
         pagxhor = scan.nextDouble();
         scan.nextLine();
         
-        Empleado emp = new Empleado (nomb,jor,ed,dni,cod,hor,pagxhor);
+        Empleado emp = new Empleado (nomb,jor,ed,dni,cod,hor,pagxhor,gen);
         
         emp.mostar_sueldoNeto();
     }
