@@ -7,7 +7,8 @@ public class Empleado
     int edad, dni, cod_Emp;
     double horas;
     double pagoxhora;
-    public Empleado (String nombre, String jornada, int edad, int dni, int cod_Emp, double horas, double pagoxhora)
+    String genero;
+    public Empleado (String nombre, String jornada, int edad, int dni, int cod_Emp, double horas, double pagoxhora, String genero)
     {
         this.nombre=nombre;
         this.jornada=jornada;
@@ -16,6 +17,7 @@ public class Empleado
         this.cod_Emp =cod_Emp;
         this.horas= horas;
         this.pagoxhora=pagoxhora;
+        this.genero=genero;
     }
     //metodo
     public void mostar_sueldoNeto()
@@ -27,6 +29,7 @@ public class Empleado
                            "\nJornada de trabajo:" +jornada+
                            "\nDNI                       :" +dni+
                            "\nEdad                      :" +edad+
+                           "\nGenero                    :" +genero+
                            "\nHoras trabajadas          :" +horas+
                            "\nPago por hora             :"+pagoxhora+
                            "\nSueldo a pagar            :" +sueldNeto);
