@@ -4,14 +4,16 @@ public class Empleado
 {
     String nombre;
     String jornada;
+    String turno;
     int edad, dni, cod_Emp;
     double horas;
     double pagoxhora;
     String genero;
-    public Empleado (String nombre, String jornada, int edad, int dni, int cod_Emp, double horas, double pagoxhora, String genero)
+    public Empleado (String nombre, String jornada, String turno, int edad, int dni, int cod_Emp, double horas, double pagoxhora, String genero)
     {
         this.nombre=nombre;
         this.jornada=jornada;
+        this.turno=turno;
         this.edad =edad;        
         this.dni =dni;
         this.cod_Emp =cod_Emp;
@@ -27,6 +29,7 @@ public class Empleado
         System.out.println("Nombre                    :" +nombre+
                            "\nCodigo de identificación :" +cod_Emp+
                            "\nJornada de trabajo:" +jornada+
+                           "\nTurno                   :" +turno+
                            "\nDNI                       :" +dni+
                            "\nEdad                      :" +edad+
                            "\nGenero                    :" +genero+

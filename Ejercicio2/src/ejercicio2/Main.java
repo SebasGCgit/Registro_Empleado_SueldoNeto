@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) 
     {
-        String nomb, jor, gen;
+        String nomb, jor, gen, tur;
         int ed, cod, dni;
         double hor, pagxhor;
         Scanner scan = new Scanner(System.in);
@@ -22,6 +22,8 @@ public class Main {
         gen = scan.nextLine();
         System.out.println("Ingrese su tipo de jornada: ");
         jor = scan.nextLine();
+        System.out.println("Ingrese su tipo de turno: ");
+        tur = scan.nextLine();
         System.out.println("Ingrese la edad: ");
         ed = scan.nextInt();
         scan.nextLine();
@@ -35,7 +37,7 @@ public class Main {
         pagxhor = scan.nextDouble();
         scan.nextLine();
         
-        Empleado emp = new Empleado (nomb,jor,ed,dni,cod,hor,pagxhor,gen);
+        Empleado emp = new Empleado (nomb,jor,tur,ed,dni,cod,hor,pagxhor,gen);
         
         emp.mostar_sueldoNeto();
     }
