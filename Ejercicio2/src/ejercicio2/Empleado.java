@@ -21,7 +21,7 @@ public class Empleado
         this.pagoxhora=pagoxhora;
         this.genero=genero;
     }
-    //el metodo
+    //el metodo r-a
     public void mostar_sueldoNeto()
     {
         double sueldNeto=horas*pagoxhora;
