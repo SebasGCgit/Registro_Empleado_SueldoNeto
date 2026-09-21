@@ -13,7 +13,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         Random ran = new Random();
         
-        //Captura de todos los datos
+        //Captura de los datos
         System.out.println("Registro del empleado");
         cod = ran.nextInt(9000)+1000;
         System.out.println("Ingrese el Nombre: ");
